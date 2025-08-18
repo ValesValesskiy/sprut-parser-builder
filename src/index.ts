@@ -86,8 +86,8 @@ export function stateForNextChunk(state: IteratorState): IteratorState {
     return {str: state.str, from: 0, to: 0};
 }
 
-export function parserBuilder<DataContext extends Record<string, any>, HandlerName extends string, Rules extends NodeRulesDict<HandlerName, DataContext> = NodeRulesDict<HandlerName, DataContext>>(
-    nodeRules: Rules,
+export function parserBuilder<DataContext, HandlerName extends string>(
+    nodeRules: NodeRulesDict<HandlerName, DataContext>,
     inRootNodes: HandlerName[],
     startHandler: StartHandler<HandlerName, DataContext> = () => {},
     endHandler: EndHandler<HandlerName, DataContext> = () => {}
