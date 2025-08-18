@@ -41,7 +41,7 @@
 <br>
 
 ```js
-import { parserBuilder } from './dist';
+import { parserBuilder } from 'sprut-parser-builder';
 
 const parser = parserBuilder<{ html: boolean; css: boolean; js: boolean; }, 'html' | 'css' | 'js'>({
     html: {
