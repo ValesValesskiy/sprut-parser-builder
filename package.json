@@ -1,6 +1,6 @@
 {
   "name": "sprut-parser-builder",
-  "version": "0.0.1-beta.3",
+  "version": "0.0.1-beta.4",
   "description": "Набор инструментов для сборки парсеров текста",
   "keywords": [
     "parser", "parsing", "text"
@@ -9,7 +9,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "!"
+    "url": "https://github.com/ValesValesskiy/sprut-parser-builder.git"
   },
   "main": "dist/index.js",
   "typesVersions": {
