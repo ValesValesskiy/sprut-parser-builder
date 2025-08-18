@@ -1,6 +1,6 @@
 {
   "name": "sprut-parser-builder",
-  "version": "0.0.1-beta.2",
+  "version": "0.0.1-beta.3",
   "description": "Набор инструментов для сборки парсеров текста",
   "keywords": [
     "parser", "parsing", "text"
@@ -12,6 +12,11 @@
     "url": "!"
   },
   "main": "dist/index.js",
+  "typesVersions": {
+    "*": {
+      "types": ["./dist/types.d.ts"]
+    }
+  },
   "scripts": {
     "start": "webpack --watch",
     "types": "tsc ./src/index.ts --declaration --outDir dist/ --emitDeclarationOnly",
